@@ -1,0 +1,248 @@
+.projects {
+    padding: 0 0 50px 0;
+    position: relative;
+    background-color: black;
+}
+
+.projects h2 {
+    font-size: 45px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin: auto;
+}
+
+.projects p {
+    color: #B8B8B8;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    margin: 14px 0 30px 0;
+
+}
+.projects h2 +p{
+    margin-inline: 20px;
+}
+
+@media screen and (min-width:992px) {
+    .projects p {
+        width: 86%;
+        line-height: 1.9em;
+        margin-inline: auto;
+    }
+}
+
+.projects .nav.nav-pills {
+    width: 72%;
+    margin: 0px auto;
+    /* background: red; */
+    border-radius: 50px;
+    background-color: rgb(255 255 255 / 10%);
+    overflow: hidden;
+
+
+
+}
+/*
+ */
+.projects .nav.nav-pills .nav-item {
+    width: 33.333333332%;
+
+}
+
+/* .projects .nav.nav-pills .nav-link {
+    border-radius: 0px;
+    background: transparent;
+    color: #fff;
+    padding: 17px 0;
+    text-align: center;
+    letter-spacing: 1.8px;
+    font-weight: 500;
+    width: 100%;
+    font-size: 17px;
+    position: relative;
+    transition: 0.3s ease-in-out;
+    z-index: 0;
+
+} */
+
+/* .projects .nav.nav-pills .nav-link::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.3s ease-in-out;
+} */
+
+/* .projects .nav.nav-pills .nav-link.active::before {
+    width: 100% !important;
+} */
+
+
+
+
+.tab-content .tab-pane{
+    width: 100%;
+}
+
+.tab-content .tab-pane p{
+    color: #B8B8B8;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    margin: 14px 0 30px 0;
+    margin-inline: auto;
+    width: 92%;
+}
+@media screen and (min-width:992px) {
+  .tab-content .tab-pane p {
+        width: 86%;
+        line-height: 1.9em;
+        margin-inline: auto;
+    }
+}
+/*  */
+/*  */
+/*  */
+/*  */
+.projects .nav.nav-pills .nav-link {
+    border-radius: 50px; /* Pour des bords arrondis */
+    background: transparent;
+    color: #fff;
+    padding: 17px 0;
+    text-align: center;
+    letter-spacing: 1.8px;
+    font-weight: 500;
+    width: 100%;
+    font-size: 17px;
+    position: relative;
+    transition: 0.3s ease-in-out;
+    z-index: 0;
+    margin: 5px; /* Ajoute un espace entre les onglets */
+}
+
+.projects .nav.nav-pills .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Un léger fond au survol */
+    color: #fff; /* Assure que le texte reste blanc */
+}
+
+.projects .nav.nav-pills .nav-link::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.3s ease-in-out;
+    border-radius: 50px; /* Correspond au border-radius du nav-link */
+}
+
+.projects .nav.nav-pills .nav-link:hover::before {
+    width: 100%; /* L'effet de couleur s'étend sur tout l'onglet */
+}
+
+.projects .nav.nav-pills .nav-link.active::before {
+    width: 100% !important;
+}
+
+.projects .nav.nav-pills .nav-link.active {
+    border: 1px solid rgba(255, 255, 255, 1);
+    color: #fff; /* Assure que le texte reste blanc quand l'onglet est actif */
+}
+
+/* Optionnel: Pour enlever les bordures individuelles et utiliser border-radius sur chaque lien */
+.nav-link#projects-tabs-tab-first {
+    border: none;
+    border-radius: 50px; /* Ajuste pour correspondre au border-radius général */
+}
+
+.nav-link#projects-tabs-tab-second {
+    border: none;
+}
+
+.nav-link#projects-tabs-tab-third {
+    border: none;
+    border-radius: 50px; /* Ajuste pour correspondre au border-radius général */
+}
+@media screen and (max-width:576px) {
+.projects .nav.nav-pills .nav-link{
+    padding: 10px 0px;
+}
+
+}
+/* ========================= */
+/* Tab 2: Tech Stack Styles  */
+/* ========================= */
+.tab-content .tab-pane h3 {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.tab-content .tab-pane ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 600px;
+}
+
+.tab-content .tab-pane ul li {
+  color: #B8B8B8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.8em;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  transition: background 0.3s ease-in-out;
+}
+
+.tab-content .tab-pane ul li:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+}
+
+/* ========================= */
+/* Tab 3: Connect Styles     */
+/* ========================= */
+.tab-content .tab-pane .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 20px;
+}
+C:\Users\LENOVO\myPortfolio\portfolio\backend\config
+.tab-content .tab-pane .social-icons a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.tab-content .tab-pane .social-icons a img {
+  width: 24px;
+  height: 24px;
+  filter: invert(1); /* makes SVG logos white on dark background */
+}
+
+.tab-content .tab-pane .social-icons a:hover {
+  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  transform: scale(1.1);
+}

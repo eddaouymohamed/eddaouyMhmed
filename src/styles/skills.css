@@ -1,0 +1,86 @@
+.skills {
+  padding: 0 0 50px 0;
+  position: relative;
+}
+.skill-bx {
+  background: #151515;
+  border-radius: 64px;
+  text-align: center;
+  padding: 53px 18px;
+  margin-top: -27px;
+}
+
+.skill-slider {
+  width: 95%;
+  margin: 0 auto;
+  position: relative;
+}
+.skills h2 {
+    font-size: 45px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin: auto;
+}
+
+.skills p {
+    color: #B8B8B8;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    margin: 14px 0 30px 0;
+}
+
+@media screen and (min-width:992px) {
+    .skills p {
+        width: 78%;
+        line-height: 1.9em;
+        margin-inline: auto;
+    }
+}
+
+.carousel ul li {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.carousel ul .item {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel ul .item img {
+    width: 56%;
+    display: block;
+    margin: 0px auto;
+}
+
+.item h5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+.background-image-left{
+        position: absolute;
+    width: 42%;
+    z-index: -5;
+    bottom: 0px;
+    top: 42%;
+    height: 56%;
+    left: 0px;
+}
+.background-image-right{
+        position: absolute;
+    width: 42%;
+    z-index: -5;
+    top: 0px;
+    bottom: 42%;
+    height: 56%;
+    right: -123px;
+}

@@ -1,0 +1,9 @@
+#
+node_modules
+build/
+.env
+#
+backend/node_modules
+backend/config/config.env
+# genaral
+dist/

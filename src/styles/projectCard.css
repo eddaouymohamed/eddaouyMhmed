@@ -1,0 +1,197 @@
+/* .proejct-imgbx {
+    position: relative;
+    border-radius: 15px;
+}
+
+
+.proejct-imgbx::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+    transition: 0.6s ease-in-out;
+    border-radius: 15px;
+
+}
+
+.proejct-imgbx:hover::before {
+    height: 100%;
+    opacity: 0.61;
+}
+
+.proejct-imgbx img {
+    width: 100%;
+}
+.proejct-txtx.hovered{
+    display: block;
+}
+.proejct-txtx.not-hovered'{
+    display: block;
+}
+/* .proejct-imgbx:hover + .proejct-txtx{
+    display: block;
+        background: transparent;
+    position: absolute;
+    top: 13%;
+    left: 15%;
+    hovered':'not-hovered'
+    width: 70%;
+    z-index:6666666;
+}
+.proejct-txtx { */
+    /* height: 100%;
+    display: non ;
+    text-align: center;
+
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    top: 0px;
+    height: 50%;
+    text-align: center;
+    background-color: red;
+    margin-left: 5px;
+    opacity: 1;
+    border-radius: 15px; */
+
+
+
+
+/* .proejct-imgbx {
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
+    margin-bottom: 24px;
+    width: 100%;
+}
+
+.proejct-imgbx::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+    transition: 0.6s ease-in-out;
+}
+
+.proejct-imgbx:hover::before {
+    height: 100%;
+}
+.proejct-txtx{
+        position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    z-index: 77777777;
+  transition: 0.5s ease-in-out;
+  /* display: none;
+
+}
+.proejct-txtx:hover{
+     top: 50%;
+  opacity: 1;
+  display:block;
+}
+.proejct-txtx span{
+    font-style: italic;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 0.8px;
+}
+.proejct-txtx h4{
+    font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1.1em;
+}
+
+/pr
+
+.proj-txtx h4 {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1.1em;
+}
+.proj-txtx span {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 0.8px;
+} */
+
+
+
+
+/*  */
+.project-imgbx {
+ position: relative;
+ border-radius: 15px;
+ overflow: hidden;
+ margin-bottom: 20px;
+}
+
+
+.project-imgbx::before {
+ content: '';
+ position: absolute;
+ width: 100%;
+ height: 0%;
+ background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+ transition: 0.6s ease-in-out;
+ border-radius: 15px;
+ z-index: 1;
+ opacity: 0; /* Initialement transparent */
+}
+
+
+.project-imgbx:hover::before {
+ height: 100%;
+ opacity: 0.61; /* Apparition au survol */
+}
+
+
+.project-imgbx img {
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ transition: opacity 0.3s ease-in-out; /* Ajout d'une transition pour l'image */
+}
+
+
+.project-imgbx:hover img {
+ opacity: 0.6; /* Diminue l'opacité de l'image au survol */
+}
+
+
+.project-txtx {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ text-align: center;
+ width: 80%;
+ z-index: 2;
+ color: white; /* Ajout d'une couleur par défaut pour le texte */
+ opacity: 0; /* Initialement caché */
+ transition: opacity 0.3s ease-in-out; /* Transition pour l'apparition */
+}
+
+
+.project-imgbx:hover +.project-txtx {
+ opacity: 1; /* Apparition du texte au survol de .project-imgbx */
+}
+
+
+.project-txtx h2 {
+ font-size: 1.5em;
+ margin-bottom: 0.5em;
+}
+
+
+.project-txtx span {
+ font-size: 1em;
+}
