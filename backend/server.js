@@ -1,8 +1,10 @@
 import app from './app.js';
-const port = 5000 || 3000 || 3535;
-const server = app.listen(port, () => {
-    console.log('server is runnig on port ' + port);
-})
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`Server is running on port ${PORT}`);
+});
+
 
 
 process.on('uncaughtException', err => {
