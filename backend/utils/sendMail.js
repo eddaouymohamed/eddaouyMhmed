@@ -1,9 +1,12 @@
 import nodemailer from 'nodemailer';
 import { configDotenv } from 'dotenv';
-configDotenv({ path: './config/config.env'});
+
+// configDotenv({ path: './config/config.env' });
+if (process.env.NODE_ENV !== 'PRODUCTION') {
+  configDotenv({ path: 'backend/config/config.env' })
+}
 const smtpUser = process.env.SMTP_USER
 const smtpPassword = process.env.SMTP_PASSWORD;
-console.log(smtpUser,smtpPassword);
 export const sendMail = async (options) => {
     let emailSent;
     console.log('!!!!!!! smtp Config Checkout$$$$$$$$$$$');
@@ -46,7 +49,7 @@ export const sendMail = async (options) => {
     // send Mail
     // let emailSent;
     try {
-        const info = await transporter.sendMail( mailOptions );
+        const info = await transporter.sendMail(mailOptions);
         console.log('Info are', info);
         console.log(`email sent successfully,${info.response}`)
         console.log(`email sent successfully to: ${mailOptions.to} `);
